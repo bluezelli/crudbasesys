@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AutoController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+
+                   <table class="table">
+                       {% for auto in autos %}
+                            <thead>
+                            <tr>
+                                <th scope="col">
+                                    Number
+                                </th>
+                                <th scope="col">
+                                    model
+                                </th>
+                                <th scope="col">
+                                   type
+                                </th>
+                                <th scope="col">
+                                    prijs
+                                </th>
+                            </tr>
+                            </thead>
+                           <tbody>
+                           <tr>
+                               <td>
+                                   {{ auto.id }}
+                               </td>
+                               <td>
+                                   {{ auto.model }}
+                               </td>
+                               <td>
+                                   
+                               </td>
+                           </tr>
+                           </tbody>
+
+                       {% endfor %}
+                   </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
