@@ -107,4 +107,11 @@ class Autos
 
         return $this;
     }
+
+//    public function getBelasting()
+//    {
+//    $gewicht = $this->getGewicht();
+//
+//
+//    }
 }
